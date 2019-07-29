@@ -1,0 +1,33 @@
+#SetEnv PHP_VER 5
+#SetEnv REGISTER_GLOBALS 0
+#SetEnv MAGIC_QUOTES 0
+
+RewriteEngine On 
+
+RewriteCond %{SCRIPT_FILENAME} !-d  
+RewriteCond %{SCRIPT_FILENAME} !-f  
+
+RewriteRule ^salut$ index.php
+
+RewriteRule ^login$ login.php
+
+RewriteRule ^register$ register.php
+
+RewriteRule ^php/logout$ php/logout.php
+
+RewriteRule ^page$ page.php
+
+RewriteRule ^profile$ profile.php
+
+RewriteRule ^explorer$ explorer.php
+
+RewriteRule ^edit_profile$ edit_profile.php
+
+RewriteRule ^abonnement$ abonnement.php
+
+RewriteRule ^playeur$ playeur.php
+
+RewriteRule ^a-propos$ a-propos.php
+
+RewriteRule ^condition$ condition.php
+
